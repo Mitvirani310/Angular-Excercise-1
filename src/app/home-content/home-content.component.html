@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<!-- <div class="container mt-4">
     
     <div class="row">
       <div class="col-md-4 mb-3">
@@ -15,4 +15,27 @@
       </div>
     </div>
   </div>
-  
+   -->
+
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Column 1: Image -->
+        <div class="col-md-4 mb-3 text-center">
+            <img src="./../../assets/products.png" [routerLink]="['/products']" class="img-fluid img-thumbnail" alt="Responsive Image">
+            <a [routerLink]="['/products']" class="btn btn-primary mt-2">Products</a>
+        </div>
+
+        <!-- Column 2: Image -->
+        <div class="col-md-4 mb-3 text-center">
+            <img src="./../../assets/Users.png" [routerLink]="['/users']" class="img-fluid img-thumbnail" alt="Responsive Image">
+            <a [routerLink]="['/users']" class="btn btn-primary mt-2">Users</a>
+        </div>
+
+        <!-- Column 3: Image Link -->
+        <div class="col-md-4 mb-3 text-center">
+            <img src="./../../assets/City.png"  [routerLink]="['/cities']" class="img-fluid img-thumbnail" alt="Responsive Image Link">
+            <a [routerLink]="['/cities']" class="btn btn-primary mt-2">City</a>
+        </div>
+    </div>
+</div>
