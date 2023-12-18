@@ -7,7 +7,7 @@
       <div class="col-md-6">
         <label for="cityId" calss="form-label">CityId</label>
         <input type="number" class="form-control" id="cityId" name="cityid" ngModel #cid="ngModel" required
-          #errcid="ngModel" disabled>
+          #errcid="ngModel" >
         <div>
           <small *ngIf="errcid.invalid  &&  errcid.touched" class="text-danger">*CityId is Required</small>
         </div>

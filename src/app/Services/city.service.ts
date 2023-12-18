@@ -7,7 +7,7 @@ import { City } from '../Models/city';
 export class CityService {
 
   constructor() { }
- 
+
   url = 'http://localhost:3000/cities';
 
   async getAllCities(): Promise<City[]> {
@@ -15,9 +15,22 @@ export class CityService {
     return await data.json() ?? [];
   }
 
-  async getCityById(id :number=0) : Promise<City> {
+  async getCityById(id: number = 0): Promise<City> {
     const data = await fetch(`${this.url}/${id}`);
     return await data.json() ?? {};
   }
 
+  async updateCity(updatedCity: City): Promise<void> {
+    const response = await fetch(`${this.url}/${updatedCity.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updatedCity),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to update city with id ${updatedCity.id}`);
+    }
+  }
 }
