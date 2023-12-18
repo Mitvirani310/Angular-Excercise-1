@@ -19,4 +19,18 @@ export class UserService {
     const data = await fetch(`${this.url}/${id}`);
     return await data.json() ?? {};
   }
+
+  async updateUser(updatedUser: User): Promise<void> {
+    const response = await fetch(`${this.url}/${updatedUser.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updatedUser),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to update city with id ${updatedUser.id}`);
+    }
+  }
 }

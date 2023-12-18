@@ -8,7 +8,7 @@
     <div class="col-md-4">
       <label for="userId" calss="form-label">UserId</label>
       <input type="number" class="form-control" id="UserId" name="userid" ngModel #uid="ngModel" required
-        #erruid="ngModel" disabled>
+        #erruid="ngModel">
       <div>
         <small *ngIf="erruid.invalid  &&  erruid.touched" class="text-danger">*UserId is Required</small>
       </div>
@@ -62,7 +62,7 @@
         </div>
       </div>
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Update</button>
     </div>
   </form>
 </div>
