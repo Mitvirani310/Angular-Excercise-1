@@ -1,29 +1,3 @@
-<!-- <p>product-detail works!</p>
-<h1 *ngIf="product">{{product.name}}</h1> -->
-<!-- 
-<div class="container mt-4">
-    <h2 class="text-center mb-4">Edit Product</h2>
-    <form *nfIf="product">
-      <div class="form-group">
-        <label for="productId">ID:</label>
-        <input type="text" class="form-control" id="productId" name="id" >
-      </div>
-      <div class="form-group">
-        <label for="productName">Name:</label>
-        <input type="text" class="form-control" id="productName" name="name">
-      </div>
-      <div class="form-group">
-        <label for="productPrice">Price:</label>
-        <input type="number" class="form-control" id="productPrice" name="price" >
-      </div>
-      <div class="form-group">
-        <label for="productQuantity">Quantity:</label>
-        <input type="number" class="form-control" id="productQuantity" name="quantity" ">
-      </div>
-    </form>
-  </div>
-   -->
-
 <div class="container mt-5">
   <form class="row g-3" (ngSubmit)="OnSubmit()" #myForm="ngForm">
     <div class="col-md-6">
@@ -59,7 +33,7 @@
       </div>
     </div>
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Update</button>
     </div>
   </form>
 </div>

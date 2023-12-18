@@ -38,7 +38,25 @@ export class UserDetailComponent {
   }
 
   OnSubmit() {
-
+    if (this.form.valid) {
+      const updatedUser: User = {
+        id: this.form.value.userid,
+        username: this.form.value.username,
+        email:this.form.value.useremail,
+        first_name: this.form.value.f_name,
+        last_name: this.form.value.l_name,
+        birthdate: this.form.value.date_of_birth,
+        city: this.form.value.city
+        // Assuming other properties of City are present
+      };
+      console.log(updatedUser)
+      // Call the service method to update the city data
+      this.userService.updateUser(updatedUser).then(() => {
+        console.log('City data updated successfully!');
+        // You can also navigate back to the city list or perform other actions
+      });
+    } else {
+      console.log('Form is invalid. Please check the fields.');
+    }
   }
-
 }
