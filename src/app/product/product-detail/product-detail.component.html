@@ -29,13 +29,13 @@
     <div class="col-md-6">
       <label for="productId" calss="form-label">ProductId</label>
       <input type="number" class="form-control" id="productId" name="prodid" ngModel #pid="ngModel" required
-        #errprodid="ngModel">
+        #errprodid="ngModel" disabled>
       <div>
         <small *ngIf="errprodid.invalid  &&  errprodid.touched" class="text-danger">*ProductId is Required</small>
       </div>
     </div>
     <div class="col-md-6">
-      <label for="productName" calss="form-label">productName</label>
+      <label for="productName" calss="form-label">ProductName</label>
       <input type="text" class="form-control" id="productName" name="prodname" ngModel #pname="ngModel" required
         #errprodname="ngModel">
       <div>
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="col-md-6">
-      <label for="productPrice" calss="form-label">ProductId</label>
+      <label for="productPrice" calss="form-label">ProductPrice</label>
       <input type="number" class="form-control" id="productPrice" name="prodprice" ngModel #pprice="ngModel" required
         #errprodprice="ngModel">
       <div>
@@ -51,7 +51,7 @@
       </div>
     </div>
     <div class="col-md-6">
-      <label for="productQuantity" calss="form-label">ProductId</label>
+      <label for="productQuantity" calss="form-label">Quantity</label>
       <input type="number" class="form-control" id="productQuantity" name="prodquantity" ngModel #pquantity="ngModel" required
         #errprodquantity="ngModel">
       <div>

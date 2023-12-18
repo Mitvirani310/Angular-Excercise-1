@@ -33,9 +33,6 @@ export class ProductDetailComponent {
         prodquantity: this.product.quantity
       })
     });
-
-
-
   }
 
   OnSubmit() {
