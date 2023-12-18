@@ -28,7 +28,7 @@ export class CityDetailComponent {
         cname: this.city.name,
         countryname: this.city.country,
         population: this.city.population,
-        state: this.city.state,
+        state: this.city.state
       });
     });
   }
@@ -41,6 +41,7 @@ export class CityDetailComponent {
         country:this.form.value.countryname,
         population: this.form.value.population,
         state: this.form.value.state,
+        updatedCityTimes:this.city.updatedCityTimes+1
         // Assuming other properties of City are present
       };
       console.log(updatedCity)
@@ -49,6 +50,7 @@ export class CityDetailComponent {
         console.log('City data updated successfully!');
         // You can also navigate back to the city list or perform other actions
       });
+      this.city.updatedCityTimes++;
     } else {
       console.log('Form is invalid. Please check the fields.');
     }

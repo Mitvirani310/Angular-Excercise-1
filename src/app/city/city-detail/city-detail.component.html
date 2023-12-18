@@ -44,6 +44,14 @@
           <small *ngIf="errstates.invalid  &&  errstates.touched" class="text-danger">*State Name is Required</small>
         </div>
       </div>
+      <!-- <div class="col-md-6">
+        <label for="ctimes" calss="form-label">Updated Times</label>
+        <input type="number" class="form-control" id="ctimes" name="updatedCity" ngModel #cities="ngModel" required
+          #errcities="ngModel">
+        <div>
+          <small *ngIf="errcities.invalid  &&  errcities.touched" class="text-danger">*City Name is Required</small>
+        </div>
+      </div> -->
       <div class="col-12">
         <button type="submit" class="btn btn-primary">Update</button>
       </div>

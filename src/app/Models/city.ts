@@ -4,5 +4,6 @@ export interface City {
     country: string;
     population: number;
     state: string;
+    updatedCityTimes: number;
   }
   

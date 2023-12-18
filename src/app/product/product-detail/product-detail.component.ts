@@ -42,6 +42,7 @@ export class ProductDetailComponent {
         name: this.form.value.prodname,
         price: this.form.value.prodprice,
         quantity: this.form.value.prodquantity,
+        updatedProductTimes:this.product.updatedProductTimes+1
       };
       console.log(updatedProduct)
       // Call the service method to update the product data
@@ -49,6 +50,7 @@ export class ProductDetailComponent {
         console.log('Product data updated successfully!');
         // You can also navigate back to the product list or perform other actions
       });
+      this.product.updatedProductTimes++;
     } else {
       console.log('Form is invalid. Please check the fields.');
     }

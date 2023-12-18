@@ -8,6 +8,7 @@
             <th>Name</th>
             <th>Price</th>
             <th>Quantity</th>
+            <th>Updated Times</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -17,6 +18,7 @@
             <td>{{ product.name }}</td>
             <td>{{ product.price | currency:'USD':'symbol':'1.2-2' }}</td>
             <td>{{ product.quantity }}</td>
+            <td>{{ product.updatedProductTimes}}</td>
             <td><a [routerLink] = "['/products', product.id]"><button class="btn btn-primary">View Details</button></a></td>
           </tr>
         </tbody>
