@@ -29,7 +29,7 @@
     <div class="col-md-6">
       <label for="productId" calss="form-label">ProductId</label>
       <input type="number" class="form-control" id="productId" name="prodid" ngModel #pid="ngModel" required
-        #errprodid="ngModel" disabled>
+        #errprodid="ngModel">
       <div>
         <small *ngIf="errprodid.invalid  &&  errprodid.touched" class="text-danger">*ProductId is Required</small>
       </div>

@@ -96,7 +96,7 @@
       "id": 101,
       "name": "T.V",
       "price": 19.99,
-      "quantity": 50
+      "quantity": 56
     },
     {
       "id": 102,
@@ -156,7 +156,7 @@
   "cities": [
     {
       "id": 1,
-      "name": "New York 1",
+      "name": "New Yorks",
       "country": "United states",
       "population": 8398748,
       "state": "New York"

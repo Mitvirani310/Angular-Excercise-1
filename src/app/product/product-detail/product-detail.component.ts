@@ -36,7 +36,22 @@ export class ProductDetailComponent {
   }
 
   OnSubmit() {
-
+    if (this.form.valid) {
+      const updatedProduct: Product = {
+        id: this.form.value.prodid,
+        name: this.form.value.prodname,
+        price: this.form.value.prodprice,
+        quantity: this.form.value.prodquantity,
+      };
+      console.log(updatedProduct)
+      // Call the service method to update the product data
+      this.productService.updateProduct(updatedProduct).then(() => {
+        console.log('Product data updated successfully!');
+        // You can also navigate back to the product list or perform other actions
+      });
+    } else {
+      console.log('Form is invalid. Please check the fields.');
+    }
   }
 
 }
