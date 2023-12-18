@@ -12,6 +12,7 @@ import { UserComponent } from './user/user.component';
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 import { CityDetailComponent } from './city/city-detail/city-detail.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UserDetailComponent } from './user/user-detail/user-detail.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
     
   ],
   providers: [],

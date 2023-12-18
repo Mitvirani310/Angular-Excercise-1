@@ -1,5 +1,5 @@
-<p>product-detail works!</p>
-<h1 *ngIf="product">{{product.name}}</h1>
+<!-- <p>product-detail works!</p>
+<h1 *ngIf="product">{{product.name}}</h1> -->
 <!-- 
 <div class="container mt-4">
     <h2 class="text-center mb-4">Edit Product</h2>
@@ -23,3 +23,43 @@
     </form>
   </div>
    -->
+
+<div class="container mt-5">
+  <form class="row g-3" (ngSubmit)="OnSubmit()" #myForm="ngForm">
+    <div class="col-md-6">
+      <label for="productId" calss="form-label">ProductId</label>
+      <input type="number" class="form-control" id="productId" name="prodid" ngModel #pid="ngModel" required
+        #errprodid="ngModel">
+      <div>
+        <small *ngIf="errprodid.invalid  &&  errprodid.touched" class="text-danger">*ProductId is Required</small>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="productName" calss="form-label">productName</label>
+      <input type="text" class="form-control" id="productName" name="prodname" ngModel #pname="ngModel" required
+        #errprodname="ngModel">
+      <div>
+        <small *ngIf="errprodname.invalid  &&  errprodname.touched" class="text-danger">*Product Name is Required</small>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="productPrice" calss="form-label">ProductId</label>
+      <input type="number" class="form-control" id="productPrice" name="prodprice" ngModel #pprice="ngModel" required
+        #errprodprice="ngModel">
+      <div>
+        <small *ngIf="errprodprice.invalid  &&  errprodprice.touched" class="text-danger">*Product Price is Required</small>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="productQuantity" calss="form-label">ProductId</label>
+      <input type="number" class="form-control" id="productQuantity" name="prodquantity" ngModel #pquantity="ngModel" required
+        #errprodquantity="ngModel">
+      <div>
+        <small *ngIf="errprodquantity.invalid  &&  errprodquantity.touched" class="text-danger">*Product Quantity is Required</small>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
