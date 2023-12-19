@@ -2,7 +2,7 @@
   <form class="row g-3" (ngSubmit)="OnSubmit()" #myForm="ngForm">
     <div class="col-md-6">
       <label for="productId" calss="form-label">ProductId</label>
-      <input type="number" class="form-control" id="productId" name="prodid" ngModel #pid="ngModel" required
+      <input type="number" class="form-control" id="productId" name="prodid" ngModel  required
         #errprodid="ngModel">
       <div>
         <small *ngIf="errprodid.invalid  &&  errprodid.touched" class="text-danger">*ProductId is Required</small>
@@ -10,7 +10,7 @@
     </div>
     <div class="col-md-6">
       <label for="productName" calss="form-label">ProductName</label>
-      <input type="text" class="form-control" id="productName" name="prodname" ngModel #pname="ngModel" required
+      <input type="text" class="form-control" id="productName" name="prodname" ngModel  required
         #errprodname="ngModel">
       <div>
         <small *ngIf="errprodname.invalid  &&  errprodname.touched" class="text-danger">*Product Name is Required</small>
@@ -18,7 +18,7 @@
     </div>
     <div class="col-md-6">
       <label for="productPrice" calss="form-label">ProductPrice</label>
-      <input type="number" class="form-control" id="productPrice" name="prodprice" ngModel #pprice="ngModel" required
+      <input type="number" class="form-control" id="productPrice" name="prodprice" ngModel  required
         #errprodprice="ngModel">
       <div>
         <small *ngIf="errprodprice.invalid  &&  errprodprice.touched" class="text-danger">*Product Price is Required</small>
@@ -26,7 +26,7 @@
     </div>
     <div class="col-md-6">
       <label for="productQuantity" calss="form-label">Quantity</label>
-      <input type="number" class="form-control" id="productQuantity" name="prodquantity" ngModel #pquantity="ngModel" required
+      <input type="number" class="form-control" id="productQuantity" name="prodquantity" ngModel  required
         #errprodquantity="ngModel">
       <div>
         <small *ngIf="errprodquantity.invalid  &&  errprodquantity.touched" class="text-danger">*Product Quantity is Required</small>

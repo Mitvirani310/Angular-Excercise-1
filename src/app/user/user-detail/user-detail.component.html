@@ -2,7 +2,7 @@
   <form class="row g-3" (ngSubmit)="OnSubmit()" #myForm="ngForm">
     <div class="col-md-4">
       <label for="userId" calss="form-label">UserId</label>
-      <input type="number" class="form-control" id="UserId" name="userid" ngModel #uid="ngModel" required
+      <input type="number" class="form-control" id="UserId" name="userid" ngModel required
         #erruid="ngModel">
       <div>
         <small *ngIf="erruid.invalid  &&  erruid.touched" class="text-danger">*UserId is Required</small>
@@ -10,7 +10,7 @@
     </div>
     <div class="col-md-4">
       <label for="userName" calss="form-label">UserName</label>
-      <input type="text" class="form-control" id="userName" name="username" ngModel #uname="ngModel" required
+      <input type="text" class="form-control" id="userName" name="username" ngModel required
         #erruname="ngModel">
       <div>
         <small *ngIf="erruname.invalid  &&  erruname.touched" class="text-danger">*User Name is Required</small>
@@ -18,7 +18,7 @@
     </div>
     <div class="col-md-4">
       <label for="userEmail" calss="form-label">Email-Id</label>
-      <input type="email" class="form-control" id="userEmail" name="useremail" ngModel #uemail="ngModel" required
+      <input type="email" class="form-control" id="userEmail" name="useremail" ngModel  required
         #erruemail="ngModel">
       <div>
         <small *ngIf="erruemail.invalid  &&  erruemail.touched" class="text-danger">*Email-Id is Required</small>
@@ -26,7 +26,7 @@
     </div>
     <div class="col-md-6">
       <label for="first_name" calss="form-label">First_Name</label>
-      <input type="text" class="form-control" id="first_name" name="f_name" ngModel #fname="ngModel" required
+      <input type="text" class="form-control" id="first_name" name="f_name" ngModel  required
         #errfname="ngModel">
       <div>
         <small *ngIf="errfname.invalid  &&  errfname.touched" class="text-danger">*First_Name is Required</small>
@@ -34,7 +34,7 @@
     </div>
     <div class="col-md-6">
         <label for="last_name" calss="form-label">Last_Name</label>
-        <input type="text" class="form-control" id="last_name" name="l_name" ngModel #lname="ngModel" required
+        <input type="text" class="form-control" id="last_name" name="l_name" ngModel  required
           #errlname="ngModel">
         <div>
           <small *ngIf="errlname.invalid  &&  errlname.touched" class="text-danger">*Last_Name is Required</small>
@@ -42,7 +42,7 @@
       </div>
       <div class="col-md-6">
         <label for="birth_date" calss="form-label">Date_of_Birth</label>
-        <input type="text" class="form-control" id="birth_date" name="date_of_birth" ngModel #dob="ngModel" required
+        <input type="text" class="form-control" id="birth_date" name="date_of_birth" ngModel  required
           #errdob="ngModel">
         <div>
           <small *ngIf="errdob.invalid  &&  errdob.touched" class="text-danger">*Birth_Date is Required</small>
@@ -50,7 +50,7 @@
       </div>
       <div class="col-md-6">
         <label for="City_name" calss="form-label">City</label>
-        <input type="text" class="form-control" id="City_name" name="city" ngModel #ucity="ngModel" required
+        <input type="text" class="form-control" id="City_name" name="city" ngModel  required
           #errucity="ngModel">
         <div>
           <small *ngIf="errucity.invalid  &&  errucity.touched" class="text-danger">*City is Required</small>

@@ -2,7 +2,7 @@
     <form class="row g-3" (ngSubmit)="OnSubmit()" #myForm="ngForm">
       <div class="col-md-6">
         <label for="cityId" calss="form-label">City Id</label>
-        <input type="number" class="form-control" id="cityId" name="cityid" ngModel #cid="ngModel" required
+        <input type="number" class="form-control" id="cityId" name="cityid" ngModel  required
           #errcid="ngModel" >
         <div>
           <small *ngIf="errcid.invalid  &&  errcid.touched" class="text-danger">*CityId is Required</small>
@@ -10,7 +10,7 @@
       </div>
       <div class="col-md-6">
         <label for="cityName" calss="form-label">City Name</label>
-        <input type="text" class="form-control" id="cityName" name="cname" ngModel #cname="ngModel" required
+        <input type="text" class="form-control" id="cityName" name="cname" ngModel required
           #errcname="ngModel">
         <div>
           <small *ngIf="errcname.invalid  &&  errcname.touched" class="text-danger">*City Name is Required</small>
@@ -18,7 +18,7 @@
       </div>
       <div class="col-md-6">
         <label for="country" calss="form-label">Country Name</label>
-        <input type="text" class="form-control" id="country" name="countryname" ngModel #countrys="ngModel" required
+        <input type="text" class="form-control" id="country" name="countryname" ngModel  required
           #errcountrys="ngModel">
         <div>
           <small *ngIf="errcountrys.invalid  &&  errcountrys.touched" class="text-danger">*Country Name is Required</small>
@@ -26,7 +26,7 @@
       </div>
       <div class="col-md-6">
         <label for="Population" calss="form-label">Population</label>
-        <input type="number" class="form-control" id="Population" name="population" ngModel #popu="ngModel" required
+        <input type="number" class="form-control" id="Population" name="population" ngModel required
           #errpopu="ngModel">
         <div>
           <small *ngIf="errpopu.invalid  &&  errpopu.touched" class="text-danger">*Population is Required</small>
@@ -34,7 +34,7 @@
       </div>
       <div class="col-md-6">
         <label for="State" calss="form-label">State</label>
-        <input type="text" class="form-control" id="State" name="state" ngModel #states="ngModel" required
+        <input type="text" class="form-control" id="State" name="state" ngModel required
           #errstates="ngModel">
         <div>
           <small *ngIf="errstates.invalid  &&  errstates.touched" class="text-danger">*State Name is Required</small>
