@@ -20,7 +20,6 @@ export class ProductService {
     return await data.json() ?? {};
   }
 
-  
   async updateProduct(updatedProduct: Product): Promise<void> {
     const response = await fetch(`${this.url}/${updatedProduct.id}`, {
       method: 'PUT',
@@ -34,7 +33,4 @@ export class ProductService {
       throw new Error(`Failed to update product with id ${updatedProduct.id}`);
     }
   }
-  // getAllProducts(): Product[] {
-  //   return this.Products;
-  // }
 }

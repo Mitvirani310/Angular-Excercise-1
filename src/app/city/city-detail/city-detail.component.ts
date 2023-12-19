@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { City } from 'src/app/Models/city';
 import { CityService } from 'src/app/Services/city.service';
 
@@ -15,7 +15,7 @@ export class CityDetailComponent {
 
   @ViewChild('myForm') form!: NgForm;
 
-  constructor(private cityService: CityService, private route: ActivatedRoute) {
+  constructor(private cityService: CityService, private route: ActivatedRoute, private router: Router) {
     this.route.params.subscribe((params: Params) => {
       this.cId = params['id'];
     });
@@ -41,18 +41,19 @@ export class CityDetailComponent {
         country:this.form.value.countryname,
         population: this.form.value.population,
         state: this.form.value.state,
-        updatedCityTimes:this.city.updatedCityTimes+1
-        // Assuming other properties of City are present
+        updatedCityTimes:++this.city.updatedCityTimes
       };
       console.log(updatedCity)
-      // Call the service method to update the city data
       this.cityService.updateCity(updatedCity).then(() => {
         console.log('City data updated successfully!');
-        // You can also navigate back to the city list or perform other actions
       });
-      this.city.updatedCityTimes++;
     } else {
       console.log('Form is invalid. Please check the fields.');
     }
+      this.router.navigate(['/cities']);
+  }
+
+  goBack() {
+    this.router.navigate(['/cities']);
   }
 }

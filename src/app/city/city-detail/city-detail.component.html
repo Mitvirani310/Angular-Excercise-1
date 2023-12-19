@@ -1,11 +1,7 @@
-<!-- <p>city-detail works!</p>
-<h1 *ngIf="city">{{city.name}}</h1> -->
-
-
 <div class="container mt-5">
     <form class="row g-3" (ngSubmit)="OnSubmit()" #myForm="ngForm">
       <div class="col-md-6">
-        <label for="cityId" calss="form-label">CityId</label>
+        <label for="cityId" calss="form-label">City Id</label>
         <input type="number" class="form-control" id="cityId" name="cityid" ngModel #cid="ngModel" required
           #errcid="ngModel" >
         <div>
@@ -13,7 +9,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <label for="cityName" calss="form-label">City-Name</label>
+        <label for="cityName" calss="form-label">City Name</label>
         <input type="text" class="form-control" id="cityName" name="cname" ngModel #cname="ngModel" required
           #errcname="ngModel">
         <div>
@@ -21,7 +17,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <label for="country" calss="form-label">Country-Name</label>
+        <label for="country" calss="form-label">Country Name</label>
         <input type="text" class="form-control" id="country" name="countryname" ngModel #countrys="ngModel" required
           #errcountrys="ngModel">
         <div>
@@ -44,16 +40,9 @@
           <small *ngIf="errstates.invalid  &&  errstates.touched" class="text-danger">*State Name is Required</small>
         </div>
       </div>
-      <!-- <div class="col-md-6">
-        <label for="ctimes" calss="form-label">Updated Times</label>
-        <input type="number" class="form-control" id="ctimes" name="updatedCity" ngModel #cities="ngModel" required
-          #errcities="ngModel">
-        <div>
-          <small *ngIf="errcities.invalid  &&  errcities.touched" class="text-danger">*City Name is Required</small>
-        </div>
-      </div> -->
       <div class="col-12">
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary mx-3 my-3">Update</button>
+        <button type="button" class="btn btn-primary mx-3 my-3" (click)="goBack()">Back</button>
       </div>
     </form>
   </div>

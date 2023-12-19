@@ -10,8 +10,6 @@ import { UserService } from '../Services/user.service';
 export class UserComponent {
 
   UserList: User[] = [];
-    // UserService: UserService = inject(UserService);
-    
     constructor(private UserService : UserService) {
         this.UserService.getAllUsers().then((UserList: User[]) => {
             this.UserList = UserList;

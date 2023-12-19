@@ -10,7 +10,6 @@ import { CityService } from '../Services/city.service';
 export class CityComponent {
 
   CityList: City[] = [];
-  // UserService: UserService = inject(UserService);
   
   constructor(private CityService : CityService) {
       this.CityService.getAllCities().then((UserList: City[]) => {
