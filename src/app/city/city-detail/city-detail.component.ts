@@ -50,5 +50,6 @@ export class CityDetailComponent {
     } else {
       console.log('Form is invalid. Please check the fields.');
     }
+    
   }
 }
