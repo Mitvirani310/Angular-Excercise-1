@@ -14,6 +14,7 @@ import { CityDetailComponent } from './city/city-detail/city-detail.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,

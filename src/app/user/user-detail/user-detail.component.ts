@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { User } from 'src/app/Models/user';
 import { UserService } from 'src/app/Services/user.service';
 
@@ -10,11 +10,15 @@ import { UserService } from 'src/app/Services/user.service';
   styleUrls: ['./user-detail.component.css'],
 })
 export class UserDetailComponent {
-  user!: User;
-  id!: number;
+  user !: User;
+  id !: number;
 
   @ViewChild('myForm') form!: NgForm;
-  constructor(private userService: UserService, private route: ActivatedRoute) {
+  constructor(
+    private userService: UserService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {
     this.route.params.subscribe((params: Params) => {
       this.id = params['id'];
       console.log(this.id);
@@ -53,7 +57,11 @@ export class UserDetailComponent {
         console.log('City data updated successfully!');
       });
     } else {
-      console.log('Form is invalid. Please check the fields.');
+      console.log('Form is invalid. Please check the fields.');     
     }
+    this.router.navigate(['/users']);
+  }
+  goBack() {
+    this.router.navigate(['/users']);
   }
 }

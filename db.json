@@ -14,7 +14,7 @@
       "id": 2,
       "username": "jane_smith",
       "email": "jane.smith@example.com",
-      "first_name": "Jane",
+      "first_name": "Janees",
       "last_name": "Smith",
       "birthdate": "1985-05-24",
       "city": "Smallville",
@@ -106,7 +106,7 @@
       "id": 101,
       "name": "T.V",
       "price": 19.999,
-      "quantity": 56,
+      "quantity": 65,
       "updatedProductTimes": 1
     },
     {
@@ -120,8 +120,8 @@
       "id": 103,
       "name": "Leptop",
       "price": 39.99,
-      "quantity": 20,
-      "updatedProductTimes": 0
+      "quantity": 30,
+      "updatedProductTimes": 2
     },
     {
       "id": 104,
@@ -242,9 +242,9 @@
       "id": 9,
       "name": "Cairo",
       "country": "Egypt",
-      "population": 10230350,
+      "population": 10230359,
       "state": "Cairo",
-      "updatedCityTimes": 0
+      "updatedCityTimes": 3
     },
     {
       "id": 10,
