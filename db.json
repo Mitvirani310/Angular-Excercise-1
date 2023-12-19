@@ -7,7 +7,8 @@
       "first_name": "John",
       "last_name": "Doe",
       "birthdate": "1990-01-15",
-      "city": "Anytown"
+      "city": "Anytown",
+      "updatedUserTimes": 1
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "first_name": "Jane",
       "last_name": "Smith",
       "birthdate": "1985-05-22",
-      "city": "Smallville"
+      "city": "Smallville",
+      "updatedUserTimes": 0
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "first_name": "Sam",
       "last_name": "Jackson",
       "birthdate": "1982-09-08",
-      "city": "Metroville"
+      "city": "Metroville",
+      "updatedUserTimes": 0
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "first_name": "Emily",
       "last_name": "White",
       "birthdate": "1993-03-30",
-      "city": "Cityville"
+      "city": "Cityville",
+      "updatedUserTimes": 0
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "first_name": "Michael",
       "last_name": "Brown",
       "birthdate": "1988-11-18",
-      "city": "Villagetown"
+      "city": "Villagetown",
+      "updatedUserTimes": 0
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "first_name": "Olivia",
       "last_name": "Jones",
       "birthdate": "1995-07-12",
-      "city": "Ruraltown"
+      "city": "Ruraltown",
+      "updatedUserTimes": 0
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "first_name": "David",
       "last_name": "Miller",
       "birthdate": "1980-04-25",
-      "city": "Suburbia"
+      "city": "Suburbia",
+      "updatedUserTimes": 0
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "first_name": "Isabella",
       "last_name": "Davis",
       "birthdate": "1998-09-03",
-      "city": "Townsville"
+      "city": "Townsville",
+      "updatedUserTimes": 0
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "first_name": "William",
       "last_name": "Smith",
       "birthdate": "1983-12-10",
-      "city": "Hometown"
+      "city": "Hometown",
+      "updatedUserTimes": 0
     },
     {
       "id": 10,
@@ -88,141 +97,162 @@
       "first_name": "Ava",
       "last_name": "Martin",
       "birthdate": "1991-06-28",
-      "city": "Homestead"
+      "city": "Homestead",
+      "updatedUserTimes": 0
     }
   ],
   "products": [
     {
       "id": 101,
       "name": "T.V",
-      "price": 19.99,
-      "quantity": 56
+      "price": 19.999,
+      "quantity": 56,
+      "updatedProductTimes": 1
     },
     {
       "id": 102,
       "name": "Washing Machine",
       "price": 29.99,
-      "quantity": 30
+      "quantity": 30,
+      "updatedProductTimes": 0
     },
     {
       "id": 103,
       "name": "Leptop",
       "price": 39.99,
-      "quantity": 20
+      "quantity": 20,
+      "updatedProductTimes": 0
     },
     {
       "id": 104,
       "name": "A.C",
       "price": 49.99,
-      "quantity": 40
+      "quantity": 40,
+      "updatedProductTimes": 0
     },
     {
       "id": 105,
       "name": "Filter",
       "price": 59.99,
-      "quantity": 25
+      "quantity": 25,
+      "updatedProductTimes": 0
     },
     {
       "id": 106,
       "name": "Refrigerator",
       "price": 69.99,
-      "quantity": 15
+      "quantity": 15,
+      "updatedProductTimes": 0
     },
     {
       "id": 107,
       "name": "Mobile",
       "price": 79.99,
-      "quantity": 10
+      "quantity": 10,
+      "updatedProductTimes": 0
     },
     {
       "id": 108,
       "name": "Smart Watch",
       "price": 89.99,
-      "quantity": 35
+      "quantity": 35,
+      "updatedProductTimes": 0
     },
     {
       "id": 109,
       "name": "Tablet",
       "price": 99.99,
-      "quantity": 22
+      "quantity": 22,
+      "updatedProductTimes": 0
     },
     {
       "id": 110,
       "name": "Projector",
       "price": 109.99,
-      "quantity": 18
+      "quantity": 18,
+      "updatedProductTimes": 0
     }
   ],
   "cities": [
     {
       "id": 1,
-      "name": "New Yorks",
-      "country": "United states",
-      "population": 8398748,
-      "state": "New York"
+      "name": "New York ",
+      "country": "United states ",
+      "population": 83987232,
+      "state": "New York",
+      "updatedCityTimes": 4
     },
     {
       "id": 2,
-      "name": "Tokyo1",
+      "name": "Tokyo",
       "country": "Japan",
-      "population": 13929286,
-      "state": "Tokyo"
+      "population": 139292,
+      "state": "Tokyo",
+      "updatedCityTimes": 4
     },
     {
       "id": 3,
       "name": "London",
       "country": "United Kingdom",
-      "population": 8982000,
-      "state": "London"
+      "population": 89820,
+      "state": "London",
+      "updatedCityTimes": 6
     },
     {
       "id": 4,
       "name": "Beijing",
       "country": "China",
-      "population": 21542000,
-      "state": "Beijing"
+      "population": 215420034,
+      "state": "Beijing",
+      "updatedCityTimes": 2
     },
     {
       "id": 5,
       "name": "Sydney",
       "country": "Australia",
       "population": 5312000,
-      "state": "New South Wales"
+      "state": "New South Wales",
+      "updatedCityTimes": 2
     },
     {
       "id": 6,
       "name": "Paris",
       "country": "France",
       "population": 2148000,
-      "state": "Paris"
+      "state": "Paris",
+      "updatedCityTimes": 2
     },
     {
       "id": 7,
       "name": "Mumbai",
       "country": "India",
       "population": 12442373,
-      "state": "Maharashtra"
+      "state": "Maharashtra",
+      "updatedCityTimes": 1
     },
     {
       "id": 8,
       "name": "Toronto",
       "country": "Canada",
       "population": 2731571,
-      "state": "Ontario"
+      "state": "Ontario",
+      "updatedCityTimes": 0
     },
     {
       "id": 9,
       "name": "Cairo",
       "country": "Egypt",
       "population": 10230350,
-      "state": "Cairo"
+      "state": "Cairo",
+      "updatedCityTimes": 0
     },
     {
       "id": 10,
       "name": "Rio de Janeiro",
       "country": "Brazil",
       "population": 6747815,
-      "state": "Rio de Janeiro"
+      "state": "Rio de Janeiro",
+      "updatedCityTimes": 0
     }
   ]
 }

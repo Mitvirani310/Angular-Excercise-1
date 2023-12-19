@@ -6,5 +6,6 @@ export interface User {
     last_name: string;
     birthdate: string;
     city: string;
+    updatedUserTimes: number;
   }
   

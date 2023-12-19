@@ -12,7 +12,7 @@ import { UserComponent } from './user/user.component';
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 import { CityDetailComponent } from './city/city-detail/city-detail.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -32,7 +32,6 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
