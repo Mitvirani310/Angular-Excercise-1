@@ -41,16 +41,12 @@ export class CityDetailComponent {
         country:this.form.value.countryname,
         population: this.form.value.population,
         state: this.form.value.state,
-        updatedCityTimes:this.city.updatedCityTimes+1
-        // Assuming other properties of City are present
+        updatedCityTimes:++this.city.updatedCityTimes
       };
       console.log(updatedCity)
-      // Call the service method to update the city data
       this.cityService.updateCity(updatedCity).then(() => {
         console.log('City data updated successfully!');
-        // You can also navigate back to the city list or perform other actions
       });
-      this.city.updatedCityTimes++;
     } else {
       console.log('Form is invalid. Please check the fields.');
     }

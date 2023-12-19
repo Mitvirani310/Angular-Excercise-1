@@ -106,22 +106,22 @@
       "id": 101,
       "name": "T.V",
       "price": 19.999,
-      "quantity": 56,
+      "quantity": 65,
       "updatedProductTimes": 1
     },
     {
       "id": 102,
       "name": "Washing Machine",
-      "price": 29.99,
+      "price": 30,
       "quantity": 30,
-      "updatedProductTimes": 0
+      "updatedProductTimes": 1
     },
     {
       "id": 103,
       "name": "Leptop",
       "price": 39.99,
-      "quantity": 20,
-      "updatedProductTimes": 0
+      "quantity": 19,
+      "updatedProductTimes": 1
     },
     {
       "id": 104,

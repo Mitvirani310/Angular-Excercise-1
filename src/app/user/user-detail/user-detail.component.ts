@@ -47,16 +47,12 @@ export class UserDetailComponent {
         last_name: this.form.value.l_name,
         birthdate: this.form.value.date_of_birth,
         city: this.form.value.city,
-        updatedUserTimes:this.user.updatedUserTimes+1
-        // Assuming other properties of City are present
+        updatedUserTimes:++this.user.updatedUserTimes
       };
       console.log(updatedUser)
-      // Call the service method to update the city data
       this.userService.updateUser(updatedUser).then(() => {
         console.log('City data updated successfully!');
-        // You can also navigate back to the city list or perform other actions
       });
-      this.user.updatedUserTimes++;
     } else {
       console.log('Form is invalid. Please check the fields.');
     }
