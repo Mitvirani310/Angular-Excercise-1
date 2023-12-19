@@ -41,7 +41,7 @@ export class ProductDetailComponent {
   }
 
   OnSubmit() {
-    if (this.form.valid) {
+    if (this.form.dirty) {
       const updatedProduct: Product = {
         id: this.form.value.prodid,
         name: this.form.value.prodname,

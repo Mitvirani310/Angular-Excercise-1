@@ -34,7 +34,7 @@ export class CityDetailComponent {
   }
 
   OnSubmit() {
-    if (this.form.valid) {
+    if (this.form.dirty) {
       const updatedCity: City = {
         id: this.form.value.cityid,
         name: this.form.value.cname,
