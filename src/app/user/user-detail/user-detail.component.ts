@@ -41,7 +41,7 @@ export class UserDetailComponent {
   }
 
   OnSubmit() {
-    if (this.form.valid) {
+    if (this.form.dirty) {
       const updatedUser: User = {
         id: this.form.value.userid,
         username: this.form.value.username,

@@ -15,10 +15,10 @@
       "username": "jane_smith",
       "email": "jane.smith@example.com",
       "first_name": "Janees",
-      "last_name": "Smith",
+      "last_name": "Smiths",
       "birthdate": "1985-05-24",
       "city": "Smallville",
-      "updatedUserTimes": 1
+      "updatedUserTimes": 2
     },
     {
       "id": 3,
@@ -34,11 +34,11 @@
       "id": 4,
       "username": "emily_white",
       "email": "emily.white@example.com",
-      "first_name": "Emily",
+      "first_name": "Emilyw",
       "last_name": "White",
       "birthdate": "1993-03-30",
       "city": "Cityville",
-      "updatedUserTimes": 0
+      "updatedUserTimes": 1
     },
     {
       "id": 5,
@@ -119,9 +119,9 @@
     {
       "id": 103,
       "name": "Leptop",
-      "price": 39.99,
+      "price": 40,
       "quantity": 30,
-      "updatedProductTimes": 2
+      "updatedProductTimes": 3
     },
     {
       "id": 104,
@@ -210,9 +210,9 @@
       "id": 5,
       "name": "Sydney",
       "country": "Australia",
-      "population": 5312000,
+      "population": 5314000,
       "state": "New South Wales",
-      "updatedCityTimes": 2
+      "updatedCityTimes": 3
     },
     {
       "id": 6,
