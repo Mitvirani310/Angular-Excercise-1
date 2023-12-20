@@ -33,4 +33,18 @@ export class ProductService {
       throw new Error(`Failed to update product with id ${updatedProduct.id}`);
     }
   }
+  async resetUpdatedTimes(productId: number): Promise<void> {
+    const response = await fetch(`${this.url}/${productId}`, {
+      method: 'PATCH', 
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ updatedProductTimes: 0 }), 
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to reset updatedProductTimes for city with id ${productId}`);
+    }
+  }
+  
 }

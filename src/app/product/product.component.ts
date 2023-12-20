@@ -14,5 +14,14 @@ export class ProductComponent {
         this.productService.getAllProducts().then((ProductList: Product[]) => {
             this.ProductList = ProductList;
           });
-    }    
+    } 
+    resetUpdatedTimes(product: Product) {
+      product.updatedProductTimes = 0;
+  
+      this.productService.resetUpdatedTimes(product.id).then(() => {
+        console.log(`UpdatedProductTimes reset for city with id ${product.id}`);
+      }).catch((error) => {
+        console.error(error);
+      });
+    }   
 }
