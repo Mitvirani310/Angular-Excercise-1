@@ -10,6 +10,7 @@
           <th>Population</th>
           <th>State</th>
           <th>Updated Times</th> 
+          <th>Reset</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -21,8 +22,8 @@
           <td>{{ city.population | number }}</td>
           <td>{{ city.state }}</td>
           <td>{{ city.updatedCityTimes}}</td>
-          <td><a [routerLink]="['/cities', city.id]">
-              <button class="btn btn-primary">View Details</button></a></td>
+          <td><a><button class="btn btn-primary" (click)="resetUpdatedTimes(city)">Reset</button></a></td>
+          <td><a [routerLink]="['/cities', city.id]"><button class="btn btn-primary">View Details</button></a></td>
         </tr>
       </tbody>
     </table>

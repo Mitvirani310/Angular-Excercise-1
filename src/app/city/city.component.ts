@@ -18,4 +18,14 @@ export class CityComponent {
         });
   }
 
+  resetUpdatedTimes(city: City) {
+    city.updatedCityTimes = 0;
+
+    this.CityService.resetUpdatedTimes(city.id).then(() => {
+      console.log(`UpdatedCityTimes reset for city with id ${city.id}`);
+    }).catch((error) => {
+      console.error(error);
+    });
+  }
+
 }
