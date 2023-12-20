@@ -31,6 +31,20 @@ export class UserService {
 
     if (!response.ok) {
       throw new Error(`Failed to update city with id ${updatedUser.id}`);
+    }  
+  }
+
+  async resetUpdatedTimes(userId: number): Promise<void> {
+    const response = await fetch(`${this.url}/${userId}`, {
+      method: 'PATCH', 
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ updatedUserTimes: 0 }), 
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to reset updatedCityTimes for city with id ${userId}`);
     }
   }
 }

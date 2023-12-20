@@ -5,10 +5,10 @@
       "username": "john Does",
       "email": "john.doe@example.com",
       "first_name": "Joh",
-      "last_name": "Doe",
+      "last_name": "Does",
       "birthdate": "1990-01-15",
       "city": "Anytown",
-      "updatedUserTimes": 3
+      "updatedUserTimes": 1
     },
     {
       "id": 2,
@@ -24,11 +24,11 @@
       "id": 3,
       "username": "sam_jackson",
       "email": "sam.jackson@example.com",
-      "first_name": "Sam",
+      "first_name": "Sam32324",
       "last_name": "Jackson",
       "birthdate": "1982-09-08",
       "city": "Metroville",
-      "updatedUserTimes": 0
+      "updatedUserTimes": 1
     },
     {
       "id": 4,
