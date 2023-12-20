@@ -113,7 +113,7 @@
       "id": 102,
       "name": "Washing Machine",
       "price": 29.98,
-      "quantity": 41,
+      "quantity": 49,
       "updatedProductTimes": 1
     },
     {
@@ -186,9 +186,9 @@
       "id": 2,
       "name": "Tokyo",
       "country": "Japan",
-      "population": 139299,
+      "population": 1235346,
       "state": "Tokyo",
-      "updatedCityTimes": 5
+      "updatedCityTimes": 7
     },
     {
       "id": 3,
