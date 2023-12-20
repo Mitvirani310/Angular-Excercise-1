@@ -13,7 +13,7 @@
         <input type="text" class="form-control" id="cityName" name="cname" ngModel required pattern="^[^0-9]+$"
           #errcname="ngModel">
         <div>
-          <small *ngIf="errcname.invalid  &&  errcname.touched" class="text-danger">*City Name is Required and should not contain numbers</small>
+          <small *ngIf="errcname.invalid" class="text-danger">*City Name is Required and should not contain numbers</small>
         </div>
       </div>
       <div class="col-md-6">
@@ -21,7 +21,7 @@
         <input type="text" class="form-control" id="country" name="countryname" ngModel  required  pattern="^[^0-9]+$"
           #errcountrys="ngModel">
         <div>
-          <small *ngIf="errcountrys.invalid  && errcountrys.invalid  &&  errcountrys.touched" class="text-danger">*Country Name is Required and should not contain numbers</small>
+          <small *ngIf="errcountrys.invalid" class="text-danger">*Country Name is Required and should not contain numbers</small>
         </div>
       </div>
       <div class="col-md-6">
@@ -37,7 +37,7 @@
         <input type="text" class="form-control" id="State" name="state" ngModel required pattern="^[^0-9]+$"
           #errstates="ngModel">
         <div>
-          <small *ngIf="errstates.invalid  &&  errstates.touched" class="text-danger">*State Name is Required and should not contain numbers</small>
+          <small *ngIf="errstates.invalid" class="text-danger">*State Name is Required and should not contain numbers</small>
         </div>
       </div>
       <div class="col-12">

@@ -21,7 +21,7 @@
       <input type="email" class="form-control" id="userEmail" name="useremail" ngModel  required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         #erruemail="ngModel">
       <div>
-        <small *ngIf="erruemail.invalid  &&  erruemail.touched" class="text-danger">*Please enter a valid email address</small>
+        <small *ngIf="erruemail.invalid" class="text-danger">*Please enter a valid email address</small>
       </div>
     </div>
     <div class="col-md-6">
@@ -29,7 +29,7 @@
       <input type="text" class="form-control" id="first_name" name="f_name" ngModel  required pattern="^[^0-9]+$"
         #errfname="ngModel">
       <div>
-        <small *ngIf="errfname.invalid  &&  errfname.touched" class="text-danger">*First_Name is Required and should not contain numbers</small>
+        <small *ngIf="errfname.invalid" class="text-danger">*First_Name is Required and should not contain numbers</small>
       </div>
     </div>
     <div class="col-md-6">
@@ -37,7 +37,7 @@
         <input type="text" class="form-control" id="last_name" name="l_name" ngModel  required pattern="^[^0-9]+$"
           #errlname="ngModel">
         <div>
-          <small *ngIf="errlname.invalid  &&  errlname.touched" class="text-danger">*Last_Name is Required and should not contain numbers</small>
+          <small *ngIf="errlname.invalid" class="text-danger">*Last_Name is Required and should not contain numbers</small>
         </div>
       </div>
       <div class="col-md-6">
@@ -45,7 +45,7 @@
         <input type="text" class="form-control" id="birth_date" name="date_of_birth" placeholder="yyyy-mm-dd" ngModel  required pattern="^[0-9-]+$"
           #errdob="ngModel">
         <div>
-          <small *ngIf="errdob.invalid  &&  errdob.touched" class="text-danger">*Please enter a valid Birth date</small>
+          <small *ngIf="errdob.invalid" class="text-danger">*Please enter a valid Birth date</small>
         </div>
       </div>
       <div class="col-md-6">
@@ -53,7 +53,7 @@
         <input type="text" class="form-control" id="City_name" name="city" ngModel  required pattern="^[^0-9]+$"
           #errucity="ngModel">
         <div>
-          <small *ngIf="errucity.invalid  &&  errucity.touched" class="text-danger">*City is Required and should not contain numbers</small>
+          <small *ngIf="errucity.invalid" class="text-danger">*City is Required and should not contain numbers</small>
         </div>
       </div>
     <div class="col-12">
