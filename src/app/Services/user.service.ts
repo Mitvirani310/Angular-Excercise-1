@@ -44,7 +44,7 @@ export class UserService {
     });
 
     if (!response.ok) {
-      throw new Error(`Failed to reset updatedCityTimes for city with id ${userId}`);
+      throw new Error(`Failed to reset updatedUserTimes for user with id ${userId}`);
     }
   }
 }

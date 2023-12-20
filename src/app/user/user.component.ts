@@ -22,7 +22,7 @@ export class UserComponent {
       user.updatedUserTimes = 0;
   
       this.UserService.resetUpdatedTimes(user.id).then(() => {
-        console.log(`UpdatedCityTimes reset for city with id ${user.id}`);
+        console.log(`UpdatedUserTimes reset for user with id ${user.id}`);
       }).catch((error) => {
         console.error(error);
       });
