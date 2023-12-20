@@ -4,11 +4,11 @@
       "id": 1,
       "username": "john Does",
       "email": "john.doe@example.com",
-      "first_name": "Joh",
+      "first_name": "John",
       "last_name": "Does",
       "birthdate": "1990-01-15",
       "city": "Anytown",
-      "updatedUserTimes": 1
+      "updatedUserTimes": 0
     },
     {
       "id": 2,
@@ -176,11 +176,11 @@
   "cities": [
     {
       "id": 1,
-      "name": "New York ",
-      "country": "United states 1",
+      "name": "New York",
+      "country": "United states",
       "population": 83987232,
       "state": "New York",
-      "updatedCityTimes": 7
+      "updatedCityTimes": 9
     },
     {
       "id": 2,

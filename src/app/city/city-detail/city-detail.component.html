@@ -10,23 +10,23 @@
       </div>
       <div class="col-md-6">
         <label for="cityName" calss="form-label">City Name</label>
-        <input type="text" class="form-control" id="cityName" name="cname" ngModel required
+        <input type="text" class="form-control" id="cityName" name="cname" ngModel required pattern="^[^0-9]+$"
           #errcname="ngModel">
         <div>
-          <small *ngIf="errcname.invalid  &&  errcname.touched" class="text-danger">*City Name is Required</small>
+          <small *ngIf="errcname.invalid  &&  errcname.touched" class="text-danger">*City Name is Required and should not contain numbers</small>
         </div>
       </div>
       <div class="col-md-6">
         <label for="country" calss="form-label">Country Name</label>
-        <input type="text" class="form-control" id="country" name="countryname" ngModel  required
+        <input type="text" class="form-control" id="country" name="countryname" ngModel  required  pattern="^[^0-9]+$"
           #errcountrys="ngModel">
         <div>
-          <small *ngIf="errcountrys.invalid  &&  errcountrys.touched" class="text-danger">*Country Name is Required</small>
+          <small *ngIf="errcountrys.invalid  && errcountrys.invalid  &&  errcountrys.touched" class="text-danger">*Country Name is Required and should not contain numbers</small>
         </div>
       </div>
       <div class="col-md-6">
         <label for="Population" calss="form-label">Population</label>
-        <input type="number" class="form-control" id="Population" name="population" ngModel required
+        <input type="number" class="form-control" id="Population" name="population" ngModel required 
           #errpopu="ngModel">
         <div>
           <small *ngIf="errpopu.invalid  &&  errpopu.touched" class="text-danger">*Population is Required</small>
@@ -34,14 +34,14 @@
       </div>
       <div class="col-md-6">
         <label for="State" calss="form-label">State</label>
-        <input type="text" class="form-control" id="State" name="state" ngModel required
+        <input type="text" class="form-control" id="State" name="state" ngModel required pattern="^[^0-9]+$"
           #errstates="ngModel">
         <div>
-          <small *ngIf="errstates.invalid  &&  errstates.touched" class="text-danger">*State Name is Required</small>
+          <small *ngIf="errstates.invalid  &&  errstates.touched" class="text-danger">*State Name is Required and should not contain numbers</small>
         </div>
       </div>
       <div class="col-12">
-        <button type="submit" class="btn btn-primary mx-3 my-3" [disabled]="!myForm.dirty">Update</button>
+        <button type="submit" class="btn btn-primary mx-3 my-3" [disabled]="!myForm.dirty || myForm.invalid">Update</button>
         <button type="button" class="btn btn-primary mx-3 my-3" (click)="goBack()">Back</button>
       </div>
     </form>
