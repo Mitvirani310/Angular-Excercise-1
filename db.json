@@ -16,9 +16,9 @@
       "email": "jane.smith@example.com",
       "first_name": "Janees",
       "last_name": "Smiths",
-      "birthdate": "1985-05-24",
+      "birthdate": "1985-05-25",
       "city": "Smallville",
-      "updatedUserTimes": 2
+      "updatedUserTimes": 1
     },
     {
       "id": 3,
@@ -112,7 +112,7 @@
     {
       "id": 102,
       "name": "Washing Machine",
-      "price": 29.98,
+      "price": 29.99,
       "quantity": 49,
       "updatedProductTimes": 1
     },
@@ -180,7 +180,7 @@
       "country": "United states",
       "population": 83987232,
       "state": "New York",
-      "updatedCityTimes": 9
+      "updatedCityTimes": 12
     },
     {
       "id": 2,
@@ -192,11 +192,11 @@
     },
     {
       "id": 3,
-      "name": "London",
+      "name": "Dublin",
       "country": "United Kingdom",
       "population": 89820,
       "state": "London",
-      "updatedCityTimes": 6
+      "updatedCityTimes": 7
     },
     {
       "id": 4,
