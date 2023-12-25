@@ -13,7 +13,6 @@ import { ProductDetailComponent } from './product/product-detail/product-detail.
 import { CityDetailComponent } from './city/city-detail/city-detail.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ProcustomComponent } from './procustom/procustom.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +25,7 @@ import { ProcustomComponent } from './procustom/procustom.component';
     CityComponent,
     ProductDetailComponent,
     CityDetailComponent,
-    UserDetailComponent,
-    ProcustomComponent
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
